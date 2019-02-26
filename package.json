@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --watch --mode=development",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "webpack"
   },
   "author": "",
   "license": "ISC",
