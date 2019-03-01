@@ -37,7 +37,10 @@ class Day {
         let response = await this.requestHighLow()
         this.setHighLow(response)
         
-        if (this.low['v'] < 0 && this.current) {
+        if (this.low['v'] < 0 && this.current && this.moonIllumination > .9) {
+            this.el.classList.remove('full-moon')
+            this.el.classList.add('both-day')
+        } else if (this.low['v'] < 0 && this.current){
             this.el.classList.add('steam-day')
         }
     }

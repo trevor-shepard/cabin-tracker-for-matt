@@ -1,3 +1,9 @@
+body {
+    background:linear-gradient(#52E5E7,#130CB7);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
 #content {
     height: 100vh;
     width: 100%;
@@ -15,6 +21,12 @@
     display: flex;
     flex-direction: column;
     align-content: center;
+}
+
+#ez-cal h3 {
+    font-size: 2rem;
+    color:white;
+    font-weight: 900;
 }
 
 .month {
@@ -42,7 +54,6 @@
 
 .ezCal-titlebar {
     width: 100%;
-    height: 40px;
     display: flex;
     flex-direction: row;
     align-content: flex-end;
@@ -52,6 +63,17 @@
 .ez-cal-button{
     height: 30%;
     margin: 5%;
+    background:none;
+    border:2px solid #ffffff;
+    font-size: .75rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.ez-cal-button:hover{
+    background: #ffffff;
+    transition:.3s;
+    color: #002661;
 }
 
 .title-list {
@@ -99,6 +121,11 @@
 }
 
 .steam-day {
-    
-    background-color: red;
+    border-radius: 50%;
+    background: rgba(255,255,255,.3);
+}
+
+.both-day {
+    background-image: url('./images/blood_red_moon.png');
+    background-size: cover;
 }
